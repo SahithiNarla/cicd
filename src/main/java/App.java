@@ -1,15 +1,29 @@
-public class Arithmetic {
+public class Calculator {
 
-public int product(int number1, int number2) {
+    public int evaluate(String expression) {
 
-return number1 * number2;
+        int sum = 0;
+
+        for (String summand : expression.split("\\+"))
+
+            sum += Integer.valueOf(summand);
+
+            return sum;
+
+    } 
 
 }
 
-public int division(int number1, int number2) {
 
-return number1 / number2;
 
-}
 
-}
+
+
+
+
+
+
+
+
+
+
